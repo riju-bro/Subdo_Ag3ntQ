@@ -1,2 +1,10 @@
 # Subdo_Ag3ntQ
-This is a simple python tool to find subdomains :) 
+![CHEESE!](IMG_20211215_212841.jpg)
+
+# Usage
+
+git clone https://github.com/Ag3ntQ/Subdo_Ag3ntQ.git
+
+cd Subdo_Ag3ntQ
+
+python subdobrute.py
