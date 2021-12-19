@@ -9,6 +9,7 @@ def subdomain():
     os.system(f"figlet SubdoBrute")
     space = 10 * " "
     print(f"{C}{space}https://github.com/Ag3ntQ{W}")
+    print(" ") # :)
     subdomains = open("subdomains.txt", 'r').read().splitlines()
     thread = 40  # it can be changed to
     diff = int(len(subdomains) / thread)
@@ -31,7 +32,7 @@ def subdomain_helper(subdomains):
             res = requests.get(get_url, headers=head)
             if res.status_code != 404:
                 iip = s.gethostbyname(url)
-                print(f"{G}[] {url} [{iip}]{W}")
+                print(f"{G}[•] {url} [{iip}]{W}")
         except requests.ConnectionError:
             # doesn't print error to make output more beauty
             pass
