@@ -10,6 +10,7 @@ def subdomain():
     space = 10 * " "
     print(f"{C}{space}https://github.com/Ag3ntQ{W}")
     print(" ") # :)
+    target = input(f"{B}\n[#] Enter Domain : {W}")
     subdomains = open("subdomains.txt", 'r').read().splitlines()
     thread = 40  # it can be changed to
     diff = int(len(subdomains) / thread)
@@ -49,5 +50,6 @@ if __name__ == '__main__':
     user = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 " \
            "Safari/537.36 "
     head = {"User-Agent": user}
-    target = input(f"{B}\n[#] Enter Domain : {W}")
     subdomain()
+
+
